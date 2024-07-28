@@ -24,7 +24,7 @@ location = {'Rural':0, 'SubUrban':1, 'Urban':2}
 params['Location'] = location[params['Location'][0]]
 
 # loading the saved model
-loaded_model = pickle.load(open(r"C:\Users\idris\HousePredict.pkl", 'rb'))
+loaded_model = pickle.load(open("HousePredict.pkl", 'rb'))
 
 # Make prediction
 if st.button("Predict"):
